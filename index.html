@@ -3,49 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        function updateDateTime() {
-            const now= new Date();
-            const date= now.toLocaleDateString();
-            const time= now.toLocaleTimeString();
-            document.getElementById('datetime').innerHTML= `${date} ${time}`;
-        }
-        setInterval(updateDateTime, 1000);
-    </script>
+    <title>Whiskers Cat Cafe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <span id="datetime"></span>
-    <header>
-        <h1>Welcome to My Website</h1>  
-        <!-- Navigation menu -->
-        <nav>
-            <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Main content of the website -->
-    <main>
-        <!--This section provides the user's with description and Links -->
-    <section id="about">
-        <h2>Projects</h2>
-        <p>This is the a brief description of me.</p>
-    </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Details about my projects gohere.</p>
-    </section>
+<!-- Header -->
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Whiskers Cat Cafe Logo">
+        <span>Whiskers Cat Cafe</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cats.html">Meet the Cats</a></li>
+            <li><a href="booking.html">Book a Visit</a></li>
+            <li><a href="adoption.html">Adoption & Care</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="booking.html" class="btn">Book Now</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>example@gmail.com</p>
-    </section>
-    </main> 
-    <footer> @2024 My Website.</footer>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <p>Welcome to</p>
+        <h1>Whiskers <span>Cat cafe</span></h1>
+        <p>A cozy space to relax, enjoy delicious treats and meet the friendly cat friends</p>
+        <div class="hero-buttons">
+            <a href="booking.html" class="btn">Book a visit</a>
+            <a href="cats.html" class="btn">Meet the cats</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="images/hero-cat.jpg" alt="Cute cat in cafe">
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about">
+    <h2>About Whiskers Cat Cafe</h2>
+    <p>We're more than just a cafe - we're a safe place for rescue cats and a place for people to unwind. Sip, relax and purr-fect connection.</p>
+</section>
+
+<!-- Cats Section -->
+<section class="cats">
+    <h2>Meets our Cats</h2>
+    <div class="cat-card">
+        <img src="images/luna.jpg" alt="Luna">
+        <h3>Luna</h3>
+        <p>Playful and curious, loves soft toys.</p>
+    </div>
+    <div class="cat-card">
+        <img src="images/milo.jpg" alt="Milo">
+        <h3>Milo</h3>
+        <p>Calm and cuddly, enjoys naps.</p>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <h2>Ready to Visit?</h2>
+    <p>Book your spot today and enjoy a relaxing experience with our adorable cats</p>
+    <a href="booking.html" class="btn">Book Now</a>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>The Manchester College, Cheetham Hill, M1 3LT</p>
+</footer>
+
 </body>
 </html>
