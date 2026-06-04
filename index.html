@@ -1,1 +1,51 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function updateDateTime() {
+            const now= new Date();
+            const date= now.toLocaleDateString();
+            const time= now.toLocaleTimeString();
+            document.getElementById('datetime').innerHTML= `${date} ${time}`;
+        }
+        setInterval(updateDateTime, 1000);
+    </script>
+</head>
+<body>
+    <span id="datetime"></span>
+    <header>
+        <h1>Welcome to My Website</h1>  
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content of the website -->
+    <main>
+        <!--This section provides the user's with description and Links -->
+    <section id="about">
+        <h2>Projects</h2>
+        <p>This is the a brief description of me.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Details about my projects gohere.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>example@gmail.com</p>
+    </section>
+    </main> 
+    <footer> @2024 My Website.</footer>
+</body>
+</html>
